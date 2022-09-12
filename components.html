@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b2ea7e8fef.js" crossorigin="anonymous"></script>
+    <title>Bootstrap Components</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+</head>
+
+<body>
+    <!-----Buttons----->
+    <div class="container border p-3 mt-5 mb-3">
+        <h4>Buttons</h4>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+        <button type="button" class="btn btn-link">Link</button>
+    </div>
+
+    <div class="container border p-3 my-3">
+        <!--anchor and link-->
+        <h4>Making buttons using the anchor tag and input element</h4>
+        <a class="btn btn-primary" href="#" role="button">Link</a>
+        <button class="btn btn-primary" type="submit">Button</button>
+        <input class="btn btn-primary" type="button" value="Input">
+        <input class="btn btn-primary" type="submit" value="Submit">
+        <input class="btn btn-primary" type="reset" value="Reset">
+    </div>
+
+    <div class="container border p-3 my-3">
+        <!--button outlines-->
+        <h4>Coloring button outlines</h4>
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        <button type="button" class="btn btn-outline-success">Success</button>
+        <button type="button" class="btn btn-outline-danger">Danger</button>
+        <button type="button" class="btn btn-outline-warning">Warning</button>
+        <button type="button" class="btn btn-outline-info">Info</button>
+        <button type="button" class="btn btn-outline-light">Light</button>
+        <button type="button" class="btn btn-outline-dark">Dark</button>
+    </div>
+
+    <div class="container border p-3 my-3">
+        <!--button sizing-->
+        <h4>Button sizing</h4>
+        <button type="button" class="btn btn-primary btn-lg">Large button</button>
+        <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+        <button type="button" class="btn btn-primary"
+            style="--bs-btn-padding-y: .45rem; --bs-btn-padding-x: .10rem; --bs-btn-font-size: .75rem;">Custom
+            button</button>
+    </div>
+
+    <div class="container border p-3 my-3">
+        <!--disabled buttons-->
+        <h4>Disabled buttons</h4>
+        <button type="button" class="btn btn-primary" disabled>Primary button</button>
+        <button type="button" class="btn btn-secondary" disabled>Button</button>
+        <button type="button" class="btn btn-outline-primary" disabled>Primary button</button>
+        <button type="button" class="btn btn-outline-secondary" disabled>Button</button>
+    </div>
+
+    <div class="container border p-3 my-3">
+        <!--toggle buttons-->
+        <h4>Toggle buttons</h4>
+        <button type="button" class="btn btn-primary" data-bs-toggle="button">Toggle button</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="button">Toggle button</button>
+    </div>
+
+
+
+    <!-----Cards----->
+    <br>
+    <hr>
+    <div class="container row mb-5 mx-5 gx-5">
+        <h4>Cards</h4><br>
+        <div class="card mx-2" style="width: 18rem;">       <!--card-->
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-primary">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <button class="btn btn-primary">Go somewhere</button>
+            </div>
+        </div>
+
+        <div class="card mx-2" style="width: 18rem;">       <!--card list-->
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="container">                                 <!--card with header-->
+        <h4>Card with header</h4>
+        <div class="card" style="width: 18rem;">            
+            <div class="card-header">
+                Featured
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+            </ul>
+            </div>
+
+            <br><h4 class="cardtext text-center">Card with a header, footer and button</h4>
+            <div class="card text-center">
+                <div class="card-header">
+                    Featured
+                </div>
+                    <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button class="btn btn-primary">Go somewhere</button>
+                </div>
+                <div class="card-footer text-muted">
+                    2 days ago
+                </div>
+            </div>
+    </div>
+
+    <div class="container">                                 <!--quoted card-->
+        <br><h4 class="cardtext text-center">Quoted card</h4>
+        <div class="card">
+            <div class="card-header">
+                Quote
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                <p>A well-known quote, contained in a blockquote element.</p>
+                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+
+    <br><div class="row justify-content-center">            <!--sized cards-->
+        <h4 class="caedtext text-center">Sized cards</h4>
+            <div class="col-sm-3">
+            <div class="card">
+                <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card">
+                <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">                                 <!--card with navbar-->
+        <br><h4 class="cardtext text-center">Card with navigation</h4>
+        <div class="card text-center">
+            <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="true" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Settings</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <button class="btn btn-primary">Go somewhere</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-----Alerts----->
+    <br>
+    <hr><br>
+    <h4 class="my-3 text-center">Alerts</h4>
+    <div class="alert alert-warning alert-dismissible fade show w-75 mx-auto" role="alert">
+        <h4 class="alert-heading">Warning!</h4>
+        <button type="button" data-bs-dismiss="alert" class="btn-close ms-5" aria-label="close"></button>
+        <p>This file may contain viruses. Close to download anyway</p>
+    </div>
+
+
+
+    <!-----NavBars----->
+    <br>
+    <hr><br>
+    <h4 class="my-3 text-center">Nav Bars</h4>
+    <nav class="navbar navbar-expand-lg bg-light text-white my-5 w-75 mx-auto">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> 
+
+            <div class="navbar-collapse" id="navbarScroll">
+                <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link disabled">Disabled</a>
+
+                    <li class="nav-item dropdown">                          <!--dropdown menu-->
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </div>
+            </div>
+
+            <form class="d-flex" role="search">                 <!--form tag used for search tab-->
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+
+        </div>
+    </nav>
+
+    <!--offcanvas navbar-->
+    <nav class="navbar bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Offcanvas navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                        <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                </div>
+            </div>
+            </div>
+    </nav>
+
+
+
+
+
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

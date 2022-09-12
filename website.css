@@ -1,0 +1,11 @@
+body::before {                          /*adds a ghost element of 60px height in block display with the body so the fixed*/
+    display: block;                     /*navbar doesn't overlap the image*/
+    content: '';
+    height: 60px;
+}
+
+@media(min-width: 768px) {              /*as long as screen size is > 768px, width shouldd be 50%*/
+    .news-input {
+        width: 50%;
+    }
+}

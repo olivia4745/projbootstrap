@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Layout</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <style>
+        [class*="col"] {
+            /*the * before the equal sign is to show the compiler that all cols, whether*/
+            /*col or col-4, col-md-2, col-1, etc are to be styled accordingly*/
+            padding: 1rem;
+            background-color: rgb(32, 207, 207);
+            color: white;
+            border: 2px solid white;
+        }
+    </style>
+</head>
+
+<body>
+    <!----Basic container example---->
+    <div class="container border">
+        <h4>Basic container example</h4>
+        <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-5 col-sm-7 col-xs-10">Column 1</div>
+            <div class="col-xl-9 col-lg-8 col-md-7 col-sm-5 col-xs-2">Column 2</div>
+        </div>
+    </div>
+
+    <!----Align items example---->
+    <br>
+    <hr><br>
+    <div class="container text-center">
+        <h4>Align items example</h4>
+        <div class="row align-items-start border" style="height: 150px;">
+            <div class="col">
+                One of three columns (Start)
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+        </div><br>
+        <div class="row align-items-center border" style="height: 150px;">
+            <div class="col">
+                One of three columns (Center)
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+        </div><br>
+        <div class="row align-items-end border" style="height: 150px;">
+            <div class="col">
+                One of three columns (End)
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+        </div>
+    </div>
+
+    <!-----Align-self example----->
+    <br>
+    <hr><br>
+    <div class="container text-center">
+        <h4>Align-self example</h4>
+        <div class="row">
+            <div class="col align-self-start">
+                One of three columns (Start)
+            </div>
+            <div class="col align-self-center">
+                One of three columns (Center)
+            </div>
+            <div class="col align-self-end">
+                One of three columns (End)
+            </div>
+        </div>
+    </div>
+
+    <!-----Justify-content example----->
+    <br>
+    <hr><br>
+    <div class="container text-center">
+        <h4>Justify-content example</h4>
+        <div class="row justify-content-start">
+            <div class="col-4">
+                One of two columns (Start)
+            </div>
+            <div class="col-4">
+                One of two columns
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-4">
+                One of two columns (Center)
+            </div>
+            <div class="col-4">
+                One of two columns
+            </div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-4">
+                One of two columns (End)
+            </div>
+            <div class="col-4">
+                One of two columns
+            </div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="col-4">
+                One of two columns (Around)
+            </div>
+            <div class="col-4">
+                One of two columns
+            </div>
+        </div>
+        <div class="row justify-content-between">
+            <div class="col-4">
+                One of two columns (Between)
+            </div>
+            <div class="col-4">
+                One of two columns
+            </div>
+        </div>
+        <div class="row justify-content-evenly">
+            <div class="col-4">
+                One of two columns (Evenly)
+            </div>
+            <div class="col-4">
+                One of two columns
+            </div>
+        </div>
+    </div>
+
+    <!-----Gutters----->
+    <br>
+    <hr><br>
+    <div class="container px-15 text-center border">
+        <!--px is padding on the x-axis (horizontal padding)-->
+        <h4>Horizontal gutters</h4>
+        <div class="row g-3">
+            <div class="col">
+                <div class="">Custom column padding</div>
+            </div>
+            <div class="col">
+                <div class="">Custom column padding</div>
+            </div>
+        </div>
+        <br>
+        <h4>Vertical gutters</h4>
+        <div class="container overflow-hidden text-center mb-3">
+            <div class="row gy-2 gx-4">
+                <div class="col-6">
+                    <div class="">Custom column padding</div>
+                </div>
+                <div class="col-6">
+                    <div class="">Custom column padding</div>
+                </div>
+                <div class="col-6">
+                    <div class="">Custom column padding</div>
+                </div>
+                <div class="col-6">
+                    <div class="">Custom column padding</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----Grids----->
+    <br>
+    <hr><br>
+    <h4 class="text-center">Grids</h4>
+    <div class="container">
+        <div class="d-grid gap-3">
+            <div class="bg-light border p-2">Grid item 1</div>
+            <div class="bg-light border p-2">Grid item 2</div>
+            <div class="bg-light border p-2">Grid item 3</div>
+        </div>
+    </div>
+
+    <br><div class="container text-center">
+        <div class="row row-cols-2">
+            <div class="col">Column 1</div>
+            <div class="col">Column 2</div>
+            <div class="col">Column 3</div>
+            <div class="col">Column 4</div>
+            <div class="col">Column 5</div>
+            <div class="col">Column 6</div>
+        </div>
+    </div>
+
+    <br><div class="container">
+        <h4 class="text-center">Grid nesting</h4>
+        <div class="row">
+            <div class="col-4">
+                Original column
+            </div>
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-6">
+                        Sub-column 1
+                    </div>
+                    <div class="col-6">
+                        Sub-column 2
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
